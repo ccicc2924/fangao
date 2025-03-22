@@ -30,7 +30,8 @@
 
 这个就需要我们手动改包和发包了
 不妨给您看看包的结构
-```
+
+```json
 {
 "request" : {
 	"mid":88888888,
@@ -44,25 +45,25 @@
 > 还有重要的不要忘记请求头加上你的token
 
 好了，这样我们就可以收到想下面这样的data
-```
+
+```json
 { 
 	"code": 0, 
 	"msg": "请求成功", 
-	"time": 000000000, 
+	"time": 88888888, 
 	"data": [ { 
-		"chid": 000000, 
-		"hid": 0000, 
+		"chid": 88888888, 
+		"hid": 88888888, 
 		"subject_name": "语文", 
 		"subject_id": 1, 
 		"username": "name", 
-		"mid": 00000000, 
+		"mid": 88888888, 
 		"homework_title": "语文寒假作业", 
 		"start_date": "2025-00-00 00:00:00", 
 		"end_date": "2025-00-00 00:00:00", 
 		"status": 0, 
 		"type": "homework", 
-		"homework_type": 1 }, 
-		// 其他类似的作业条目... 
+		"homework_type": 1 },  
 	] }
 ```
 大家可以通过识别上面的username，来检查是否成功。
@@ -75,7 +76,8 @@
 | post | https://api.homework.100eks.com/member.homework.success.card |
 
 发包内容
-```
+
+```json
 {
 "request" : {
 	"mid":88888888,
